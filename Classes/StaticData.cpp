@@ -5,7 +5,7 @@
 //  @ Project : FishingJoy
 //  @ File Name : StaticData.cpp
 //  @ Date : 2017/9/29
-//  @ Author : 211506170
+//  @ Author :211506170
 //
 //
 
@@ -84,3 +84,4 @@ StaticData::StaticData()
 {
 	_staticFileName = STATIC_DATA_FILENAME;
 }
+
