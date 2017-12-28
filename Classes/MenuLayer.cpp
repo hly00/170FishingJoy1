@@ -1,10 +1,14 @@
 #include "MenuLayer.h"
 
 
-MenuLayer::MenuLayer(void)
+MenuLayer::MenuLayer()
 {
 }
 
+
+MenuLayer::~MenuLayer()
+{
+}
 bool MenuLayer::init()
 {
 	if (!CCLayer::init())
@@ -12,8 +16,4 @@ bool MenuLayer::init()
 		return false;
 	}
 	return true;
-}
-
-MenuLayer::~MenuLayer(void)
-{
 }

@@ -1,4 +1,5 @@
 #include "AppDelegate.h"
+#include "HelloWorldScene.h"
 #include "GameScene.h"
 #include "GameMenuLayer.h"
 
@@ -26,11 +27,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = GameMenuLayer::scene();
+    //CCScene *pScene = HelloWorld::scene();
 
-    // run
-    pDirector->runWithScene(pScene);
 
+	/*创建GameScene类（游戏场景），添加到窗口*/
+	CCScene *pScene = GameScene::create();
+	pDirector->runWithScene(pScene);
     return true;
 }
 
