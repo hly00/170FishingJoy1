@@ -54,8 +54,3 @@ void FishLayer::addFish(float delta)
 FishLayer::~FishLayer(void)
 {
 }
-
-CCArray* FishLayer::getFishArray()
-{
-	return _fishes;
-}
